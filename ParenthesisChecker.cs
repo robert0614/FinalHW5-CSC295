@@ -8,17 +8,10 @@ namespace CSC295HW5
 {
     public class ParenthesisChecker
     {
-        /// <summary>
-        /// Checks if the parentheses in the given expression are balanced.
-        /// </summary>
-        /// <param name="expression">The input string containing parentheses.</param>
-        /// <returns>True if the parentheses are balanced, false otherwise.</returns>
         public static bool isBalanced(string expression)
         {
-            // Initialize a stack to keep track of opening brackets.
             Stack stack = new Stack();
-
-            // Iterate through each character in the expression.
+            
             foreach (char c in expression)
             {
                 // Push opening brackets onto the stack.
